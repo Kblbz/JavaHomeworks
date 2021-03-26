@@ -15,5 +15,22 @@ public class ArrayWithSquareRoot {
         }
         int [] squareRoots = Arrays.copyOf(tenIntegers, tenIntegers.length);
         System.out.println(Arrays.toString(squareRoots));
+
+        // Норм вариант, но я бы сразу записывал результат в массив без копирования
+        // Так же обрати внимание на мое форматирование
+        int[] integers = {9, 25, 1156, 81, 256, 121, 1, 289, 36, 4};
+        squareRoots = new int[integers.length];
+
+        for (int i = 0; i < integers.length; i++) {
+            squareRoots[i] = (int) Math.sqrt(integers[i]);
+        }
+        System.out.println(Arrays.toString(squareRoots));
+
+        // Или вот так :)
+        int[] integersForStream = {9, 25, 1156, 81, 256, 121, 1, 289, 36, 4};
+        squareRoots = Arrays.stream(integersForStream)
+                .map(integer -> (int) Math.sqrt(integer))
+                .toArray();
+        System.out.println(Arrays.toString(squareRoots));
     }
 }
