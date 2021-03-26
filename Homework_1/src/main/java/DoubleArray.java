@@ -9,5 +9,9 @@ public class DoubleArray {
         double a = justDoubles[0];
         double b = justDoubles[4];
         System.out.println("First - " + a + ", Last - " + b);
+
+        // Вариант нормальный, но последний элемент массива лучше вынимать не по конкретному индексу, а через его размер
+        double first = justDoubles[0];
+        double last = justDoubles[justDoubles.length - 1];
     }
 }
