@@ -59,4 +59,7 @@ public class ArrayRandomSort {
             heapify(array, i, 0);
         }
     }
+
+
+    // OMG. Слишком сложно) Но раз сортирует - то окей)
 }

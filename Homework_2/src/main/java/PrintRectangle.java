@@ -17,8 +17,8 @@ public class PrintRectangle {
     public static void main(String[] args) {
         int length = 8;
         int height = 8;
-        for (int i=0; i<length; i++) {
-            for (int j=0; j<height; j++){
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < height; j++){
                 System.out.print("*");
             }
             System.out.println();
