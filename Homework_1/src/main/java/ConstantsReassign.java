@@ -8,7 +8,7 @@
 public class ConstantsReassign {
     public static void main(String[] args) {
         final int GRAMS_PER_CUP = 10;
-        final int COFFECUPS_PER_DAY = 2;
+        final int COFFECUPS_PER_DAY = 2; // Виски лучше :)
         System.out.println("Coffee daily portion for 1 person: "+ GRAMS_PER_CUP * COFFECUPS_PER_DAY + " grams");
 
         //GRAMS_PER_CUP = 15;
