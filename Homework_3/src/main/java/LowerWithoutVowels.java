@@ -8,7 +8,6 @@ public class LowerWithoutVowels {
     public static void main(String[] args) {
         String a = "ABCDEFGHIJK";
         a = a.toLowerCase();
-        System.out.println(a);
+        System.out.println(a.replaceAll("[a|e|i|o|u]", ""));
     }
-
 }

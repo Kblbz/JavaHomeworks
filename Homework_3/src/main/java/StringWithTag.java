@@ -10,5 +10,13 @@
  */
 
 public class StringWithTag {
-
+    public static void main(String[] args) {
+        String word = "Welcome to Java World";
+        StringBuilder htmlBuilder = new StringBuilder();
+        htmlBuilder.append("<p>");
+        htmlBuilder.append(word);
+        htmlBuilder.append("</p>");
+        String s = htmlBuilder.toString();
+        System.out.println(s);
+    }
 }
