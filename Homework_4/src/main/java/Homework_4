@@ -3,7 +3,7 @@ Requirements:
 a) Create a class Human with all the required fields to store the information (variable types you could choose by yourself).
 b) Add to the class a constructor with parameters which initialize all the fields.
 
-2. Implement the method fight() depending on weight, strength and age of the boxer:
++2. Implement the method fight() depending on weight, strength and age of the boxer:
 You should write the dependency by yourself. The method should return true or false if our boxer won or lost.
 public class Boxer {
     public int age;
@@ -28,7 +28,8 @@ public class Boxer {
 Requirements:
 a) if ourBoxer.fight(anotherBoxer) returns true, then anotherBoxer.fight(outBoxer) should return false;
 
-3. Create 3 different classes to demonstrate the relationships "has-a" and "uses-a". They can be anything you want.
+
++3. Create 3 different classes to demonstrate the relationships "has-a" and "uses-a". They can be anything you want.
 For example: Car - Engine - Wheels
 
 4. Create a class StaticCalculator. It should have three fields: double firstValue, double secondValue and String operation.
@@ -40,21 +41,21 @@ In this main method you should create your StaticCalculator object and do some c
 by calling your "calculate" method.
 Print all results to the console.
 
-5. Create a simple class with a bunch of constructors.
++5. Create a simple class with a bunch of constructors.
 All these constructors should take different number of parameters.
 Demonstrate in your class, how we can call one constructor from another.
 
-6. Create a simple class with any 3 fields.
++6. Create a simple class with any 3 fields.
 Demonstrate in your class how we can use "this" keyword to refer to the object,
 from which a constructor or a method was invoked.
 
-7. Create a simple class with some fields.
++7. Create a simple class with some fields.
 Demonstrate in your class how we can use initialization blocks.
 
-8. Find the information about the order of initialization, when you create a new object of a class:
++8. Find the information about the order of initialization, when you create a new object of a class:
 When constructors, initialization blocks are being executed.
 When fields are initialized with default values.
 
-9. Write your own example of the recursive function. You can find a lot of examples on the Internet.
++9. Write your own example of the recursive function. You can find a lot of examples on the Internet.
 
-10. Create a simple class with overloaded methods. Write another class to demonstrate the concept of methods overloading.
++10. Create a simple class with overloaded methods. Write another class to demonstrate the concept of methods overloading.

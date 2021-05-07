@@ -6,6 +6,7 @@
  * a) if ourBoxer.fight(anotherBoxer) returns true, then anotherBoxer.fight(outBoxer) should return false;
  */
 
+
 public class Boxer {
     public int age;
     public int weight;
@@ -16,17 +17,22 @@ public class Boxer {
         this.weight = weight;
         this.strength = strength;
     }
-/**
+
     public boolean fight(Boxer anotherBoxer) {
-
-
-        // write your code here
+        boolean fightResult;
+        if (anotherBoxer.weight * anotherBoxer.strength / anotherBoxer.age < this.weight * this.strength / this.age) {
+            System.out.println(fightResult = true);
+        } else {
+            System.out.println(fightResult = false);
+        }
+        return fightResult;
     }
- */
+
 
     public static void main(String[] args) {
-
+        Boxer ourBoxer = new Boxer(25, 85, 15);
+        Boxer anotherBoxer = new Boxer(31, 90, 17);
+        ourBoxer.fight(anotherBoxer);
+        anotherBoxer.fight(ourBoxer);
     }
-
 }
-//    Boxer ourBoxer = new Boxer(25, 85, 15);

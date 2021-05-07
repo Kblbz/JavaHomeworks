@@ -10,33 +10,23 @@ public class Client {
     String city;
     int age;
 
-    public Client (String firstName) {
-        this.f
+    public Client (String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        System.out.println("Client's full name: first name and last name");
     }
 
+    public Client (String firstName, String lastName, String city) {
+        this(firstName, lastName);
+        this.city = city;
+        System.out.println("Client's full name & city");
+    }
 
-
+    public Client (String firstName, String lastName, String city, int age) {
+        this(firstName, lastName, city);
+        this.age = age;
+        System.out.println("Client's full name, city & age");
+    }
 }
 
-/**
- *     int age;
- *     int weight;
- *     String name;
- *
- *     public Cat(String name) {
- *         this.name = name;
- *         System.out.println("1 Args cons");
- *     }
- *
- *     public Cat(String name, int age) {
- *         this(name);
- *         this.age = age;
- *         System.out.println("2 Args cons");
- *     }
- *
- *     public Cat(String name, int age, int weight) {
- *         this(name, age);
- *         this.weight = weight;
- *         System.out.println("3 Args cons");
- *     }
- */
+
