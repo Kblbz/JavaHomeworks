@@ -1,0 +1,28 @@
+8. Find the information about the order of initialization, when you create a new object of a class:
+When constructors, initialization blocks are being executed.
+When fields are initialized with default values.
+
+When constructors, initialization blocks are being executed.
+
+Order of execution:
+1. static initialization blocks of super classes
+2. static initialization blocks of the class
+3. instance initialization blocks of super classes
+4. constructors of super classes
+5. instance initialization blocks of the class
+6. constructor of the class
+
+The code in static initialization block will be executed at class load time - once per class load, before any instances
+of the class are constructed and before any static methods are called.
+
+The instance initialization block is actually copied by the Java compiler into every constructor the class has.
+So every time the code in instance initialization block is executed exactly before the code in constructor.
+
+
+
+
+When fields are initialized with default values
+
+4.12.5. Initial Values of Variables
+Every variable in a program must have a value before its value is used:
+Each class variable, instance variable, or array component is initialized with a default value when it is created (§15.9, §15.10.2)
