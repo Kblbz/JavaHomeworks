@@ -1,0 +1,3 @@
+7) What is the difference between package-private access and protected access?
+
+Package-private member cannot be reached from subclass which belongs to another package
